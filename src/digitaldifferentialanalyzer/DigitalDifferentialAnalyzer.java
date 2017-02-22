@@ -13,15 +13,7 @@ import java.util.List;
  * @author Christine
  */
 public class DigitalDifferentialAnalyzer {
-    private Pair<Integer, Integer> p0;
-    private Pair<Integer, Integer> p1;
-
-    public DigitalDifferentialAnalyzer(Pair<Integer, Integer> p0, Pair<Integer, Integer> p1) {
-        this.p0 = p0;
-        this.p1 = p1;
-    }
-    
-    public List<Pair> compute() {
+    public static List<Pair> compute(Pair<Integer, Integer> p0, Pair<Integer, Integer> p1) {
         List<Pair> points = new ArrayList<>();
                 
         // Calculate the difference between two end points

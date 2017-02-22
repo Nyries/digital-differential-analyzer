@@ -16,8 +16,7 @@ public class TestDigitalDifferentialAnalyzer {
         Pair<Integer, Integer> p0 = new Pair<>(1, 7);
         Pair<Integer, Integer> p1 = new Pair<>(6, 10);
         
-        DigitalDifferentialAnalyzer dda = new DigitalDifferentialAnalyzer(p0, p1);
-        List<Pair> result = dda.compute();
+        List<Pair> result = DigitalDifferentialAnalyzer.compute(p0, p1);
         for (Pair point: result) {
             System.out.println(point.x + " " + point.y);
         }
